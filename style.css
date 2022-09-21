@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(155, 89, 182, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Varela Round", sans-serif;
+}
+
+.phone {
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #eee;
+  border-radius: 15px;
+  height: 600px;
+  width: 340px;
+}
+.phone .content {
+  opacity: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: calc(100% - 60px);
+  width: 100%;
+  transition: opacity 0.4s ease;
+}
+.phone .content.show {
+  opacity: 1;
+}
+.phone nav {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin-top: -5px;
+  width: 100%;
+}
+.phone nav ul {
+  background-color: white;
+  display: flex;
+  list-style: none;
+  height: 60px;
+}
+.phone nav ul li {
+  color: #777;
+  cursor: pointer;
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+}
+.phone nav ul li:hover {
+  color: #8e44ad;
+}
+.phone nav ul li p {
+  font-size: 12px;
+  margin: 2px 0;
+}
+.phone nav ul li.active {
+  color: #8e44ad;
+}/*# sourceMappingURL=style.css.map */
